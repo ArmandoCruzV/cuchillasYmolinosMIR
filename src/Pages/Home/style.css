@@ -1,0 +1,127 @@
+.home {
+    display: grid;
+    grid-template-rows: 15% 60% 25%;
+    place-content: end;
+    height: 100vh;
+    color: black;
+    background: #0e1017;
+}
+
+.home-figure {
+    background: radial-gradient(rgb(43, 16, 11),rgb(211, 77, 15));
+    width: calc(82vw - 30px);
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: flex;
+
+    animation-duration: 2s;
+    animation-name: figure-title;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+}
+@keyframes figure-title {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.home-figure--title {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 11;
+
+}
+
+#title {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: arial; 
+    color: tomato;
+    display: block;
+    white-space: nowrap; 
+    width: 19ch;
+    animation: typing 3s steps(22);
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+@keyframes typing {
+    from { width: 0;}
+}
+
+
+.home-figure--title > span {
+    color: white;
+    font-size: medium;
+    margin-top: -10px;
+}
+
+.home-span {
+    border: 1px solid tomato;
+    width: calc(82vw - 30px);
+    height: calc(25vh - 30px);
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    font-size: medium;
+
+    animation-duration: 2s;
+    animation-name: animation-span;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+}
+@keyframes animation-span {
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:768px){
+    .home {
+        display: grid;
+        grid-template-rows: 15% 50% 35%;
+        place-content: start;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .home-figure {
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+    }
+
+    #title {
+        margin: auto 0;
+        font-size: 30px;
+        padding-top: 10px;
+        width: 100vw;
+    }
+
+    .home-figure--title > span {
+        color: white;
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .home-span {
+        width: 90vw;
+        height: 90%;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+        font-size: medium;
+        color: aqua;
+    }
+}

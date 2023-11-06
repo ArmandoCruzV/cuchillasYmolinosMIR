@@ -1,0 +1,138 @@
+.contactanos {
+        display: grid;
+        place-content: end;
+        height: 100vh;
+        background: #0e1017;
+        grid-template-rows: 10% 90%;
+        gap: 20px;
+        color: white;
+}
+
+.contactanos > h1 {
+        padding-top: 10px;
+        place-content: center;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+}
+
+form {
+        border: solid 2px tomato;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 0 auto;
+        display: grid;
+        justify-content: baseline;
+        align-items: baseline;
+        grid-template-rows: 5% 15% 5% 15% 5% 15% 5% 25% 5%;
+        width: 40vw;
+        height: 85vh;
+        z-index: 1;
+
+        animation-duration: 2s;
+        animation-name: formulario;
+        animation-iteration-count:initial;
+        animation-direction:normal;
+        transition: formulario 2s ease-in-out 1s;
+     }
+     @keyframes formulario {
+        0%{
+            transform: translateY(500px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+     }
+
+input {
+        padding: 6px;
+}
+
+textarea {
+        padding: 6px;
+        height: 90%;
+}
+
+.contactanos-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+}
+
+.oficinas-title,
+.numeros-title {
+     height: 10vh;
+     border: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+     font-size: large; 
+     font-weight: bold;
+}
+
+.icono-oficinas,
+.icono-numeros {
+        width: 25px;
+        height: 25px;
+        color: #66c1ff;
+}
+
+.visitanos { 
+        display: grid;
+        place-content: start;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 2s;
+        animation-name: animation-contactanos;
+        animation-iteration-count:initial;
+        animation-direction:normal;
+        transition: animation-contactanos 2s ease-in-out 1s;
+     }
+     @keyframes animation-contactanos {
+        0%{
+            transform: translateX(500px);
+        }
+        100%{
+            transform: translateX(0);
+        }
+     }
+
+.btn-send {
+        border-radius: 12px;
+        width: 50%;
+        padding: 10px;
+        background: #66c1ff;
+        border: none;
+}
+
+.asunto {
+        height: 80%;
+}
+
+
+
+@media (max-width:768px){
+        .contactanos-container {
+                display: table-column;
+                z-index: 2;
+        }     
+
+        .visitanos {
+                width: 100vw;
+                background: #0e1017;
+                padding: 20px;
+        }
+
+        .visitanos > h2 {
+                font-size: medium;
+        }
+
+        .oficinas-title,
+        .numeros-title {
+                font-size: medium; 
+                font-weight: bold;
+        }
+
+        form {
+                width: 90vw;
+        }
+}

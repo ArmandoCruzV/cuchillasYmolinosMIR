@@ -1,0 +1,120 @@
+.productos {
+    display: grid;
+    place-content: end;
+    background: #0e1017;
+    color: white;
+}
+
+h1 {
+    width: calc(82vw - 30px);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+figure {
+    height: 400px;
+    width: 250px;
+    border: white 2px solid;
+    border-radius: 9px;
+    display: grid;
+    grid-template-rows: 88% 12%;
+    cursor: pointer;
+}
+
+figure > img {
+    object-fit: cover;
+    height: calc(400px - 10%);
+    width: 246px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+figure > p {
+    display: flex;
+    text-align: center;
+    place-content: center;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(45deg, orangered, rgb(209, 55, 28));
+    border-radius: 9px;
+    color: white;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(min(270px,100vw),1fr));
+    row-gap: 50px;
+    width: 90%;
+   margin: 0 auto;
+
+   animation-duration: 2s;
+   animation-name: animation-product;
+   animation-iteration-count:initial;
+   animation-direction:normal;
+   transition: animation-product 2s ease-in-out 1s;
+}
+@keyframes animation-product {
+   0%{
+       transform: translateY(500px);
+   }
+   100%{
+       transform: translateY(0);
+   }
+}
+
+
+
+@media (max-width:768px){
+    .productos {
+        display: grid;
+        place-content: center;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: large;
+    }
+    
+    figure {
+        height: 280px;
+        width: 120px;
+        border: white 2px solid;
+        border-radius: 9px;
+        display: grid;
+        grid-template-rows: 68% 32%;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    figure > img {
+        object-fit: cover;
+        height: calc(213px - 10%);
+        width: 116px;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+    }
+    
+    figure > p {
+        display: flex;
+        text-align: center;
+        place-content: center;
+        align-items: center;
+        padding: 5px;
+        background: linear-gradient(45deg, orangered, rgb(209, 55, 28));
+        border-radius: 9px;
+        color: white;
+        font-size: small;
+    }
+    
+    section {
+        display: grid;
+        grid-template-columns: 
+        repeat(auto-fit, minmax(min(100px,100vw),1fr));
+        gap: 15px;
+        width: 80vw;
+    }
+}

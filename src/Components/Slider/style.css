@@ -1,0 +1,543 @@
+.slider{
+    animation-duration: 3s;
+    animation-name: animation-slider;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+}
+@keyframes animation-slider {
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.home-figure--img1 {
+    position: absolute;
+    width: 24vw;
+    height: calc(60vh - 30px);
+    object-fit: fill;
+    border-radius: 12px;
+    top: 18vh;
+    left: 47%;
+    border: solid 3px white;
+    z-index: 9;
+
+    animation-duration: 16s;
+    animation-name: figure--img1;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+@keyframes figure--img1 {
+    20%{
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 70%;
+        z-index: 2;
+    }
+    40%{
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 85%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+    60%{
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 23%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+    80% {
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 33%;
+        z-index: 2;
+    }
+  }
+
+.home-figure--img2 {
+    position: absolute;
+    width: 18vw;
+    height: 37vh;
+    object-fit: fill;
+    border-radius: 12px;
+    top: 25vh;
+    left: 70%;
+    border: solid 3px white;
+    opacity: 0.8;
+    z-index: 2;
+
+    animation-duration: 16s;
+    animation-name: figure--img2;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+@keyframes figure--img2 {
+    20%{
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 85%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+    40%{
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 23%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+    60% {
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 33%;
+        z-index: 2;
+    }
+    80% {
+        width: 24vw;
+        height: calc(60vh - 30px);
+        top: 18vh;
+        left: 47%;
+        opacity:81;
+        z-index: 9;
+    }
+  }
+
+.home-figure--img3 {
+    position: absolute;
+    width: 18vw;
+    height: 37vh;
+    object-fit: fill;
+    border-radius: 12px;
+    top: 25vh;
+    left: 33%;
+    border: solid 3px white;
+    opacity: 0.8;
+    z-index: 2;
+
+    animation-duration: 16s;
+    animation-name: figure--img3;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+@keyframes figure--img3 {
+    20%{
+        width: 24vw;
+        height: calc(60vh - 30px);
+        top: 18vh;
+        left: 47%;
+        opacity:81;
+        z-index: 9;
+    }
+    40%{
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 70%;
+        z-index: 2;
+    }
+    60% {
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 85%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+    80% {
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 23%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+}
+
+.home-figure--img4 {
+    position: absolute;
+    width: 13vw;
+    height: 30vh;
+    object-fit: fill;
+    border-radius: 12px;
+    top: 29vh;
+    left: 23%;
+    border: solid 3px white;
+    border-top: 2px;
+    opacity: 0.4;
+    z-index: 1;
+
+    animation-duration: 16s;
+    animation-name: figure--img4;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+@keyframes figure--img4 {
+    20%{
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 33%;
+        z-index: 2;
+    }
+    40%{
+        width: 24vw;
+        height: calc(60vh - 30px);
+        top: 18vh;
+        left: 47%;
+        opacity:81;
+        z-index: 9;
+    }
+    60% {
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 70%;
+        z-index: 2;
+    }
+    80% {
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 85%;
+        opacity: 0.4;
+        z-index: 1;   
+    }
+}
+
+.home-figure--img5 {
+    position: absolute;
+    width: 13vw;
+    height: 30vh;
+    object-fit: fill;
+    border-radius: 12px;
+    top: 29vh;
+    left: 85%;
+    border: solid 3px white;
+    opacity: 0.4;
+    z-index: 1;
+
+    animation-duration: 16s;
+    animation-name: figure--img5;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+@keyframes figure--img5 {
+    20%{
+        width: 13vw;
+        height: 30vh;
+        top: 29vh;
+        left: 23%;
+        z-index: 1;
+        opacity: 0.4;
+    }
+    40%{
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 33%;
+        z-index: 2;
+    }
+    60% {
+        width: 24vw;
+        height: calc(60vh - 30px);
+        top: 18vh;
+        left: 47%;
+        opacity:81;
+        z-index: 9;
+    }
+    80% {
+        width: 18vw;
+        height: 37vh;
+        opacity: 0.8;
+        top: 25vh;
+        left: 70%;
+        z-index: 2;   
+    }
+}
+
+
+
+
+
+@media (max-width:768px){
+    .home-figure--img1 {
+        position: absolute;
+        width: 30vw;
+        height: calc(50vh - 30px);
+        object-fit: fill;
+        border-radius: 12px;
+        top: 28vh;
+        left: 35%;
+        border: solid 3px white;
+        z-index: 9;
+    
+        animation-duration: 16s;
+        animation-name: figure--img1;
+        animation-iteration-count: infinite;
+        animation-direction:normal;
+    }
+    @keyframes figure--img1 {
+        20%{
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 60%;
+            z-index: 2;
+        }
+        40%{
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 75%;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        60%{
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 13%;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        80% {
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 23%;
+            z-index: 2;
+        }
+      }
+    
+    .home-figure--img2 {
+        position: absolute;
+        width: 18vw;
+        height: 37vh;
+        object-fit: fill;
+        border-radius: 12px;
+        top: 35vh;
+        left: 60%;
+        border: solid 3px white;
+        opacity: 0.8;
+        z-index: 2;
+    
+        animation-duration: 16s;
+        animation-name: figure--img2;
+        animation-iteration-count: infinite;
+        animation-direction:normal;
+    }
+    @keyframes figure--img2 {
+        20%{
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 75%;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        40%{
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 13%;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        60% {
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 23%;
+            z-index: 2;
+        }
+        80% {
+            width: 30vw;
+            height: calc(50vh - 30px);
+            top: 28vh;
+            left: 35%;
+            opacity:81;
+            z-index: 9;
+        }
+      }
+    
+    .home-figure--img3 {
+        position: absolute;
+        width: 18vw;
+        height: 37vh;
+        object-fit: fill;
+        border-radius: 12px;
+        top: 35vh;
+        left: 23%;
+        border: solid 3px white;
+        opacity: 0.8;
+        z-index: 2;
+    
+        animation-duration: 16s;
+        animation-name: figure--img3;
+        animation-iteration-count: infinite;
+        animation-direction:normal;
+    }
+    @keyframes figure--img3 {
+        20%{
+            width: 30vw;
+            height: calc(50vh - 30px);
+            top: 28vh;
+            left: 35%;
+            opacity:81;
+            z-index: 9;
+        }
+        40%{
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 60%;
+            z-index: 2;
+        }
+        60% {
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 75%;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        80% {
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 13%;
+            opacity: 0.4;
+            z-index: 1;
+        }
+    }
+    
+    .home-figure--img4 {
+        position: absolute;
+        width: 13vw;
+        height: 30vh;
+        object-fit: fill;
+        border-radius: 12px;
+        top: 39vh;
+        left: 13%;
+        border: solid 3px white;
+        border-top: 2px;
+        opacity: 0.4;
+        z-index: 1;
+    
+        animation-duration: 16s;
+        animation-name: figure--img4;
+        animation-iteration-count: infinite;
+        animation-direction:normal;
+    }
+    @keyframes figure--img4 {
+        20%{
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 23%;
+            z-index: 2;
+        }
+        40%{
+            width: 30vw;
+            height: calc(50vh - 30px);
+            top: 28vh;
+            left: 35%;
+            opacity:81;
+            z-index: 9;
+        }
+        60% {
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 60%;
+            z-index: 2;
+        }
+        80% {
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 75%;
+            opacity: 0.4;
+            z-index: 1;   
+        }
+    }
+    
+    .home-figure--img5 {
+        position: absolute;
+        width: 13vw;
+        height: 30vh;
+        object-fit: fill;
+        border-radius: 12px;
+        top: 39vh;
+        left: 75%;
+        border: solid 3px white;
+        opacity: 0.4;
+        z-index: 1;
+    
+        animation-duration: 16s;
+        animation-name: figure--img5;
+        animation-iteration-count: infinite;
+        animation-direction:normal;
+    }
+    @keyframes figure--img5 {
+        20%{
+            width: 13vw;
+            height: 30vh;
+            top: 39vh;
+            left: 13%;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        40%{
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 23%;
+            z-index: 2;
+        }
+        60% {
+            width: 30vw;
+            height: calc(50vh - 30px);
+            top: 28vh;
+            left: 35%;
+            opacity:81;
+            z-index: 9;
+        }
+        80% {
+            width: 18vw;
+            height: 37vh;
+            opacity: 0.8;
+            top: 35vh;
+            left: 60%;
+            z-index: 2;   
+        }
+    }
+}
