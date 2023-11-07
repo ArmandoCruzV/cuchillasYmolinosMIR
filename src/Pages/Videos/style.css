@@ -8,11 +8,11 @@
     color: white;
 }
 
-.videos-title > h1 {
+.videos-h1 {
     width: 100%;
     padding-top: 20px;
     color: white;
-    z-index: 2;
+    z-index: 3;
 }
 
 .videos-container {

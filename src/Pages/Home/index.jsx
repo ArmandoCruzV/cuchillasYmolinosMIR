@@ -1,5 +1,6 @@
 import React from "react";
 import { Slider } from "../../Components/Slider";
+import icono from '../../assets/icono-MIR.png';
 import './style.css';
 
 function Home(){
@@ -8,7 +9,10 @@ function Home(){
         <div className="home">
             <div className="home-figure--title">
                 <span id="title">Cuchillas y Molinos</span>
-                <span>Venta de cuchillas y equipos para la industria del plástico.</span>
+                <span id="title-reciclaje">Reciclaje y venta</span>
+                <span id="title-reciclaje2">de plástico molido</span>
+                <img id="title-reciclaje3" src={icono}></img>
+                <span className="subtitle">Venta de plástico reciclado molido, cuchillas y equipos para la industria misma.</span>
             </div>
 
             <div className="home-figure">

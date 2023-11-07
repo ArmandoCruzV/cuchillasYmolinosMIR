@@ -39,10 +39,12 @@
 }
 
 #title {
+    position: absolute;
+    top: 20px;
     font-weight: bold;
     font-size: 50px;
     font-family: arial; 
-    color: tomato;
+    color: transparent;
     display: block;
     white-space: nowrap; 
     width: 19ch;
@@ -51,14 +53,87 @@
     padding-bottom: 10px;
 }
 @keyframes typing {
-    from { width: 0;}
+    0% { 
+        color: tomato;
+        width: 0; 
+    }
+    90%{color:tomato;}
 }
 
+#title-reciclaje {
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: arial; 
+    color: transparent;
+    display: block;
+    white-space: nowrap; 
+    width: 19ch;
+    animation: typing2 3s steps(22);
+    overflow: hidden;
+    padding-bottom: 10px;
+    animation-delay: 3s;
+}
+@keyframes typing2 {
+    0% { 
+        color: tomato;
+        width: 0;
+    }
+    90%{color:tomato;}
+}
+
+#title-reciclaje2 {
+    text-align: center;
+    top: 20px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: arial; 
+    color: transparent;
+    display: block;
+    white-space: nowrap; 
+    width: 19ch;
+    animation: typing3 3s steps(22);
+    overflow: hidden;
+    padding-bottom: 10px;
+    animation-delay: 6s;
+}
+@keyframes typing3 {
+    0% { 
+        color: tomato;
+        width: 0;
+    }
+    90%{color:tomato;}
+}
+
+#title-reciclaje3 {
+    padding: 5px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, white, rgb(174, 198, 243));
+    width: 300px;
+    height: 70px;
+    opacity: 0;
+    top: 20px;
+    left: 48%;
+    position: absolute;
+    animation: icono 3s steps(22) forwards;
+    animation-delay: 9s;
+}
+@keyframes icono {
+    0% { 
+        opacity: 0;
+    }
+    100%{opacity: 1;}
+}
 
 .home-figure--title > span {
     color: white;
     font-size: medium;
-    margin-top: -10px;
+}
+
+.subtitle {
+    padding-top: 100px;
 }
 
 .home-span {
@@ -103,10 +178,34 @@
     }
 
     #title {
-        margin: auto 0;
+        width: 200px;
+        height: 70px;
+        top: 70px;
+        left: 0%;
         font-size: 30px;
-        padding-top: 10px;
         width: 100vw;
+    }
+
+    #title-reciclaje,
+    #title-reciclaje2 {
+        width: 200px;
+        height: 70px;
+        top: 70px;
+        left: 0%;
+        font-size: 30px;
+        width: 100vw;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    #title-reciclaje3 {
+        width: 200px;
+        height: 70px;
+        top: 70px;
+        left: 20%;
+        background: transparent;
     }
 
     .home-figure--title > span {
@@ -122,6 +221,11 @@
         padding: 5px;
         text-align: center;
         font-size: medium;
-        color: aqua;
+        color: black;
+        background: linear-gradient(45deg, tomato, orangered);
+    }
+
+    .home-figure {
+        background: radial-gradient(rgb(11, 16, 43),rgb(15, 93, 211));
     }
 }

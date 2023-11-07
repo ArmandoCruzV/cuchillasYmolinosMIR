@@ -13,7 +13,7 @@
         place-content: center;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        z-index: 3;
 }
 
 form {
@@ -46,11 +46,13 @@ form {
 
 input {
         padding: 6px;
+        background: white;
 }
 
 textarea {
         padding: 6px;
         height: 90%;
+        background: white;
 }
 
 .contactanos-container {
