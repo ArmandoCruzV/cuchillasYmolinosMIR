@@ -6,7 +6,9 @@
 .planeta {
     display: none;
 }
-
+.planet-shadow{
+    display:none;
+}
 .home {
     display: grid;
     grid-template-rows: 15% 60% 25%;
@@ -48,13 +50,14 @@
 }
 
 #title {
+    display: flex;
+    align-items: start;
     position: absolute;
     top: 20px;
     font-weight: bold;
     font-size: 50px;
     font-family: arial; 
     color: transparent;
-    display: block;
     white-space: nowrap; 
     width: 19ch;
     animation: typing 3s steps(22);
@@ -76,7 +79,8 @@
     font-size: 50px;
     font-family: arial; 
     color: transparent;
-    display: block;
+    display: flex;
+    align-items: start;
     white-space: nowrap; 
     width: 19ch;
     animation: typing2 3s steps(22);
@@ -100,7 +104,8 @@
     font-size: 50px;
     font-family: arial; 
     color: transparent;
-    display: block;
+    display: flex;
+    align-items: start;
     white-space: nowrap; 
     width: 19ch;
     animation: typing3 3s steps(22);
@@ -136,7 +141,7 @@
     100%{opacity: 1;}
 }
 
-.home-figure--title > span {
+.home-figure--title > p {
     color: white;
     font-size: medium;
 }
@@ -173,17 +178,18 @@
 @media (max-width:768px){
     .home {
         display: grid;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 55% 45%;
         grid-template-columns: 100%;
         place-content: start;
         justify-content: center;
         align-items: center;
+        background: linear-gradient(to top, black, #00051a);
     }
 
     #title {
         width: 200px;
         height: 70px;
-        top: 50vh;
+        top: 57vh;
         left: 0%;
         padding-left: 10px;
         font-size: 20px;
@@ -194,7 +200,7 @@
     #title-reciclaje2 {
         width: 200px;
         height: 70px;
-        top: 50vh;
+        top: 57vh;
         left: 0%;
         padding-left: 10px;
         font-size: 20px;
@@ -202,15 +208,18 @@
     }
 
     #title-reciclaje3 {
-        position: fixed;
+        position: absolute;
         width: 200px;
         height: 70px;
-        top: 50vh;
+        top: 54vh;
         left:100px;
         background: transparent;
     }
 
     .subtitle {
+        display: flex;
+        text-shadow: 1px -10px 10px black;
+        width: 60%;
         animation-duration: 3s;
         animation-name: animation-sub;
         animation-iteration-count:initial;
@@ -221,25 +230,25 @@
         }
     }
 
-    .home-figure--title{
-        color: white;
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 20% 80%;
-    }
-
     .home-span {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        padding: 10px;
+        text-align: start;
         width: 100vw;
         height: 90%;
-        margin: 0 auto;
-        padding: 5px;
-        text-align: center;
         font-size: small;
         color: white;
         border: none;
+        text-shadow: 5px 1px 7px black;
         z-index: 3;
+    }
+
+    .planet-shadow {
+        display: flex;
+        float: right;
+        background: transparent;
+        border-radius: 50%;
+        width: 40vw;
+        height: 25vh;
     }
 
     .home-figure {
@@ -254,7 +263,7 @@
         position: absolute;
         display: grid;
         top: 13vh;
-        right: 0vw;
+        left: 0vw;
         width: 90vw;
         height: 30vh;
         z-index: 3;

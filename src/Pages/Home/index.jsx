@@ -18,7 +18,6 @@ function Home(){
                 <span id="title-reciclaje">Reciclaje y venta de</span>
                 <span id="title-reciclaje2"> plástico molido</span>
                 <img id="title-reciclaje3" src={icono}></img>
-                <div></div>
                 <p className="subtitle">Venta de plástico reciclado molido, cuchillas y equipos para la industria misma.</p>
             </div>
 
@@ -28,14 +27,17 @@ function Home(){
 
             <div className="home-span">
             <span >
-                <p>Venta de Polipropileno (PP) y Polietileno de alta densidad (HDPE) entre otros tipos de plásticos,
-                     fabricantes de cuchillas, compra venta de molinos 
+                <p>
+                    Venta de Polipropileno (PP) y Polietileno de alta densidad (HDPE) entre otros tipos de plásticos,
+                     fabricantes de cuchillas, compra venta de molinos </p>
+                     <p> <div className="planet-shadow"></div>
                     de plástico y equipo periférico como son compactadoras,
                      paletizadoras, pigmentadoras y reciclado, 
                         creada con la finalidad de cubrir las
                       necesidades del mercado de la industria del plástico
                        para atender las demandas más exigentes de empresas 
-                    que se dedican a la transformación del plástico.</p>
+                    que se dedican a la transformación del plástico.
+                </p>
             </span>
             </div>
         </div>
