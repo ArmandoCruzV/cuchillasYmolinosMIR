@@ -30,7 +30,9 @@ function Productos(){
         <div className="productos">
             <DetailImage/>
 
-            <h1>Algunos de nuestros productos</h1>
+        <div className="title">
+        <h1>Algunos de nuestros productos</h1>
+        </div>
             <section>
                 <figure 
                 onClick={()=>Image(img1)}

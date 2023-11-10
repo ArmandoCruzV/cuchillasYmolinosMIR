@@ -16,6 +16,7 @@ function AppRoutes(){
         {path: '/contactanos', element: <Contactanos/>},
         {path: '/productos', element: <Productos/>},
         {path: '/videos', element: <Videos/>},
+        {path: '/*', element: <Home/>},
     ])
 
     return routes;
