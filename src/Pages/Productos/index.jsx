@@ -34,91 +34,91 @@ function Productos(){
         <h1>Algunos de nuestros productos</h1>
         </div>
             <section>
-                <figure 
+                <figure className="products"
                 onClick={()=>Image(img1)}
                 >
                     <img src={img1}/>
                     <p>CUCHILLAS PAGANI MOD-4090-FAP</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img3)}
                 >
                     <img src={img3}/>
                     <p>MOLINOS PAGANI</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img4)}
                 >
                     <img src={img4}/>
                     <p>MOLINOS PAGANI</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img6)}
                 >
                     <img src={img6}/>
                     <p>EXTRACTOR CICLON 3HP</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img7)}
                 >
                     <img src={img7}/>
                     <p>MOLINOS VARIADOS</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img8)}
                 >
                     <img src={img8}/>
                     <p>MOLINO TRIA DE 40HP</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img9)}
                 >
                     <img src={img9}/>
                     <p>MOLINO TRIA DE 40HP</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img10)}
                 >
                     <img src={img10}/>
                     <p>CUCHILLAS PAGANI MOD-2235-HD</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img11)}
                 >
                     <img src={img11}/>
                     <p>CRIBAS VARIAS</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img12)}
                 >
                     <img src={img12}/>
                     <p>MOLINO CHINO DE 20 HP</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img13)}
                 >
                     <img src={img13}/>
                     <p>MOLINO CHINO 30 HP</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img14)}
                 >
                     <img src={img14}/>
                     <p>CUCHILLAS PARA COMPACTADORA PAGANI MOD CMB-600</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img15)}
                 >
                     <img src={img15}/>
                     <p>CUCHILLAS VARIAS</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img16)}
                 >
                     <img src={img16}/>
                     <p>MOLINO PAGANI MOD-2235 DE 15HP</p>
                 </figure>
-                <figure
+                <figure className="products"
                 onClick={()=>Image(img17)}
                 >
                     <img src={img17}/>

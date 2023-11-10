@@ -142,11 +142,10 @@ section {
 
         .title > h1 {
             margin:0;
-            background: linear-gradient(45deg,#89d5f3,gray);
+            background: linear-gradient(45deg,#4cbeff,gray);
             padding: 20px;
             border-bottom-left-radius: 17px;
             color: black;
-            -webkit-text-stroke: 0.1px white;
         }
 
         section {
@@ -160,7 +159,7 @@ section {
         }
         
 
-        figure {
+        .products {
             margin: 0 auto;
             height: 200px;
             width: 90vw;
@@ -172,7 +171,7 @@ section {
             
         }
 
-        figure > img {
+        .products > img {
         border: solid 1px white;
         border-radius: 9px;
         object-fit: cover;
@@ -182,7 +181,7 @@ section {
         -moz-box-shadow: 17px 0px 26px 6px rgba(0,0,0,0.56);
         }
 
-        figure > p {
+        .products > p {
             color: white;
             height: 200px;
             width: 100%;
