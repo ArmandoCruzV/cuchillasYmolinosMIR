@@ -5,7 +5,7 @@ function Videos(){
     return(
         <div className="videos">
            
-            <h1 className="videos-h1">Videos</h1>
+            <div className='contain-h1'><h1 className="videos-h1">Videos</h1></div>
 
             <div className="videos-container">
                 <div className='container-videos--section2'>

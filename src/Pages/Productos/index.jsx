@@ -16,6 +16,9 @@ import img14 from '../../assets/home-img14.png';
 import img15 from '../../assets/home-img15.png';
 import img16 from '../../assets/home-img16.png';
 import img17 from '../../assets/home-img17.png';
+import polipropileno from '../../assets/polipro.jpg';
+import polietileno from '../../assets/polietileno.jpg';
+import pet from '../../assets/pet.jpg';
 import './style.css';
 
 function Productos(){
@@ -34,6 +37,24 @@ function Productos(){
         <h1>Algunos de nuestros productos</h1>
         </div>
             <section>
+                <figure className="products"
+                onClick={()=>Image(polietileno)}
+                >
+                    <img src={polietileno}/>
+                    <p>HDPE (Polietileno de alta densidad)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(polipropileno)}
+                >
+                    <img src={polipropileno}/>
+                    <p>PP (Polipropileno)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(pet)}
+                >
+                    <img src={pet}/>
+                    <p>PET (Tereftalato de Polietileno)</p>
+                </figure>
                 <figure className="products"
                 onClick={()=>Image(img1)}
                 >

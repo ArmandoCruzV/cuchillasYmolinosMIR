@@ -6,7 +6,8 @@ import './style.css';
 function Contactanos(){
     return (
         <div className="contactanos">
-            <h1>Contacta con nosotros</h1>
+
+            <div className="contactanos-h1"><h1>Contacta con nosotros</h1></div>
 
             <div className="contactanos-container">
             <form  action="https://formsubmit.co/hao_2-d@hotmail.com" method="POST">
