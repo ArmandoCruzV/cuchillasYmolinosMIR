@@ -18,7 +18,13 @@ import img16 from '../../assets/home-img16.png';
 import img17 from '../../assets/home-img17.png';
 import polipropileno from '../../assets/polipro.jpg';
 import polietileno from '../../assets/polietileno.jpg';
-import pet from '../../assets/pet.jpg';
+import PEazul from '../../assets/PEazul.jpg';
+import peBlanco from '../../assets/peBlanco.jpg';
+import PEmorado from '../../assets/PEmorado.jpg';
+import PEverde from '../../assets/PEverde.jpg';
+import PPamarillo from '../../assets/PPamarillo.jpg';
+import PPMultiColor from '../../assets/PPMultiColor.jpg';
+import PPnegro from '../../assets/PPnegro.jpg';
 import './style.css';
 
 function Productos(){
@@ -50,10 +56,46 @@ function Productos(){
                     <p>PP (Polipropileno)</p>
                 </figure>
                 <figure className="products"
-                onClick={()=>Image(pet)}
+                onClick={()=>Image(PPamarillo)}
                 >
-                    <img src={pet}/>
-                    <p>PET (Tereftalato de Polietileno)</p>
+                    <img src={PPamarillo}/>
+                    <p>PP (Polipropileno)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(PPMultiColor)}
+                >
+                    <img src={PPMultiColor}/>
+                    <p>PP (Polipropileno)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(PPnegro)}
+                >
+                    <img src={PPnegro}/>
+                    <p>PP (Polipropileno)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(PEazul)}
+                >
+                    <img src={PEazul}/>
+                    <p>HDPE (Polietileno de alta densidad)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(peBlanco)}
+                >
+                    <img src={peBlanco}/>
+                    <p>HDPE (Polietileno de alta densidad)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(PEmorado)}
+                >
+                    <img src={PEmorado}/>
+                    <p>HDPE (Polietileno de alta densidad)</p>
+                </figure>
+                <figure className="products"
+                onClick={()=>Image(PEverde)}
+                >
+                    <img src={PEverde}/>
+                    <p>HDPE (Polietileno de alta densidad)</p>
                 </figure>
                 <figure className="products"
                 onClick={()=>Image(img1)}
