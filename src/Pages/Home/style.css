@@ -216,10 +216,13 @@
         background: transparent;
     }
 
-    .subtitle {
+    .home-figure--title > p {
+        padding-left: 15px;
+        color: white;
         display: flex;
-        text-shadow: 1px -10px 10px black;
-        width: 60%;
+        text-shadow: 1px 1px 0px black;
+        -webkit-text-stroke: 0.5px white;
+        width: 70%;
         animation-duration: 3s;
         animation-name: animation-sub;
         animation-iteration-count:initial;
@@ -238,7 +241,7 @@
         font-size: small;
         color: white;
         border: none;
-        text-shadow: 5px 1px 7px black;
+        text-shadow: 1px 1px 10px blue;
         z-index: 3;
     }
 
