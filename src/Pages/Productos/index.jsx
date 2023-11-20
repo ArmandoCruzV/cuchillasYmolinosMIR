@@ -1,6 +1,8 @@
 import { React, useContext } from "react";
+import { useState } from "react";
 import { ContextPage } from "../../Components/Context";
 import { DetailImage } from "../../Components/DetailImage";
+import { FaSearch } from "react-icons/fa";
 import img1 from '../../assets/image-home1.png';
 import img3 from '../../assets/image-home3.png';
 import img4 from '../../assets/image-home4.png';
@@ -35,6 +37,137 @@ function Productos(){
             contexto.setImage(img)
     }
 
+    const products =[
+        {name:'polietileno',
+        img: <img src={polietileno}/>,
+        texto: <p>HDPE (Polietileno de alta densidad)</p>,
+        funcion: ()=>Image(polietileno),
+        },
+        {name:'polipropileno',
+        img: <img src={polipropileno}/>,
+        texto: <p>PP (Polipropileno)</p>,
+        funcion: ()=>Image(polipropileno),
+        },
+        {name:'PPamarillo',
+        img: <img src={PPamarillo}/>,
+        texto: <p>PP (Polipropileno)</p>,
+        funcion: ()=>Image(PPamarillo),
+        },
+        {name:'PPMultiColor',
+        img: <img src={PPMultiColor}/>,
+        texto: <p>PP (PPMultiColor)</p>,
+        funcion: ()=>Image(PPMultiColor),
+        },
+        {name:'PPnegro',
+        img: <img src={PPnegro}/>,
+        texto: <p>PP (PPnegro)</p>,
+        funcion: ()=>Image(PPnegro),
+        },
+        {name:'PEazul',
+        img: <img src={PEazul}/>,
+        texto: <p>PP (PEazul)</p>,
+        funcion: ()=>Image(PEazul),
+        },
+        {name:'peBlanco',
+        img: <img src={peBlanco}/>,
+        texto: <p>PP (peBlanco)</p>,
+        funcion: ()=>Image(peBlanco),
+        },
+        {name:'PEmorado',
+        img: <img src={PEmorado}/>,
+        texto: <p>PP (PEmorado)</p>,
+        funcion: ()=>Image(PEmorado),
+        },
+        {name:'PEverde',
+        img: <img src={PEverde}/>,
+        texto: <p>PP (PEverde)</p>,
+        funcion: ()=>Image(PEverde),
+        },
+        {name:'CUCHILLAS PAGANI MOD-4090-FAP',
+        img: <img src={img1}/>,
+        texto: <p>CUCHILLAS PAGANI MOD-4090-FAP</p>,
+        funcion: ()=>Image(img1),
+        },
+        {name:'MOLINOS PAGANI',
+        img: <img src={img3}/>,
+        texto: <p>MOLINOS PAGANI</p>,
+        funcion: ()=>Image(img3),
+        },
+        {name:'MOLINOS PAGANI',
+        img: <img src={img4}/>,
+        texto: <p>MOLINOS PAGANI</p>,
+        funcion: ()=>Image(img4),
+        },
+        {name:'EXTRACTOR CICLON 3HP',
+        img: <img src={img6}/>,
+        texto: <p>EXTRACTOR CICLON 3HP</p>,
+        funcion: ()=>Image(img6),
+        },
+        {name:'MOLINOS VARIADOS',
+        img: <img src={img7}/>,
+        texto:  <p>MOLINOS VARIADOS</p>,
+        funcion: ()=>Image(img7),
+        },
+        {name:'MOLINO TRIA DE 40HP',
+        img: <img src={img8}/>,
+        texto:  <p>MOLINO TRIA DE 40HP</p>,
+        funcion: ()=>Image(img8),
+        },
+        {name:'MOLINO TRIA DE 40HP',
+        img: <img src={img9}/>,
+        texto:  <p>MOLINO TRIA DE 40HP</p>,
+        funcion: ()=>Image(img9),
+        },
+        {name:'CUCHILLAS PAGANI MOD-2235-HD',
+        img: <img src={img10}/>,
+        texto:  <p>CUCHILLAS PAGANI MOD-2235-HD</p>,
+        funcion: ()=>Image(img10),
+        },
+        {name:'CRIBAS VARIAS',
+        img: <img src={img11}/>,
+        texto:  <p>CRIBAS VARIAS</p>,
+        funcion: ()=>Image(img11),
+        },
+        {name:'MOLINO CHINO DE 20 HP',
+        img: <img src={img12}/>,
+        texto:  <p>MOLINO CHINO DE 20 HP</p>,
+        funcion: ()=>Image(img12),
+        },
+        {name:'MOLINO CHINO 30 HP',
+        img: <img src={img13}/>,
+        texto:  <p>MOLINO CHINO 30 HP</p>,
+        funcion: ()=>Image(img13),
+        },
+        {name:'CUCHILLAS PARA COMPACTADORA PAGANI MOD CMB-600',
+        img: <img src={img14}/>,
+        texto:  <p>CUCHILLAS PARA COMPACTADORA PAGANI MOD CMB-600</p>,
+        funcion: ()=>Image(img14),
+        },
+        {name:'CUCHILLAS VARIAS',
+        img: <img src={img15}/>,
+        texto:  <p>CUCHILLAS VARIAS</p>,
+        funcion: ()=>Image(img15),
+        },
+        {name:'MOLINO PAGANI MOD-2235 DE 15HP',
+        img: <img src={img16}/>,
+        texto:  <p>MOLINO PAGANI MOD-2235 DE 15HP</p>,
+        funcion: ()=>Image(img16),
+        },
+        {name:'MOLINO CHINO DE 20 HP',
+        img: <img src={img17}/>,
+        texto:  <p>MOLINO CHINO DE 20 HP</p>,
+        funcion: ()=>Image(img17),
+        },
+    ];
+
+    const[item,setItem] = useState(''); 
+
+    const nombre = item.toString().toLocaleLowerCase();
+
+    const nombres = products.filter(item => 
+        item.name.toLocaleLowerCase().includes(nombre)
+    )
+
     return (
         <div className="productos">
             <DetailImage/>
@@ -42,151 +175,33 @@ function Productos(){
         <div className="title">
         <h1>Algunos de nuestros productos</h1>
         </div>
+
+        <div className="busqueda">
+        <input 
+        className="input"
+        value={item}
+        onChange={(event)=>{
+            setItem(event.target.value)
+        }}
+        ></input>
+        <FaSearch className="lupa"/>
+        </div>
+        
+
             <section>
-                <figure className="products"
-                onClick={()=>Image(polietileno)}
-                >
-                    <img src={polietileno}/>
-                    <p>HDPE (Polietileno de alta densidad)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(polipropileno)}
-                >
-                    <img src={polipropileno}/>
-                    <p>PP (Polipropileno)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(PPamarillo)}
-                >
-                    <img src={PPamarillo}/>
-                    <p>PP (Polipropileno)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(PPMultiColor)}
-                >
-                    <img src={PPMultiColor}/>
-                    <p>PP (Polipropileno)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(PPnegro)}
-                >
-                    <img src={PPnegro}/>
-                    <p>PP (Polipropileno)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(PEazul)}
-                >
-                    <img src={PEazul}/>
-                    <p>HDPE (Polietileno de alta densidad)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(peBlanco)}
-                >
-                    <img src={peBlanco}/>
-                    <p>HDPE (Polietileno de alta densidad)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(PEmorado)}
-                >
-                    <img src={PEmorado}/>
-                    <p>HDPE (Polietileno de alta densidad)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(PEverde)}
-                >
-                    <img src={PEverde}/>
-                    <p>HDPE (Polietileno de alta densidad)</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img1)}
-                >
-                    <img src={img1}/>
-                    <p>CUCHILLAS PAGANI MOD-4090-FAP</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img3)}
-                >
-                    <img src={img3}/>
-                    <p>MOLINOS PAGANI</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img4)}
-                >
-                    <img src={img4}/>
-                    <p>MOLINOS PAGANI</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img6)}
-                >
-                    <img src={img6}/>
-                    <p>EXTRACTOR CICLON 3HP</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img7)}
-                >
-                    <img src={img7}/>
-                    <p>MOLINOS VARIADOS</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img8)}
-                >
-                    <img src={img8}/>
-                    <p>MOLINO TRIA DE 40HP</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img9)}
-                >
-                    <img src={img9}/>
-                    <p>MOLINO TRIA DE 40HP</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img10)}
-                >
-                    <img src={img10}/>
-                    <p>CUCHILLAS PAGANI MOD-2235-HD</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img11)}
-                >
-                    <img src={img11}/>
-                    <p>CRIBAS VARIAS</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img12)}
-                >
-                    <img src={img12}/>
-                    <p>MOLINO CHINO DE 20 HP</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img13)}
-                >
-                    <img src={img13}/>
-                    <p>MOLINO CHINO 30 HP</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img14)}
-                >
-                    <img src={img14}/>
-                    <p>CUCHILLAS PARA COMPACTADORA PAGANI MOD CMB-600</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img15)}
-                >
-                    <img src={img15}/>
-                    <p>CUCHILLAS VARIAS</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img16)}
-                >
-                    <img src={img16}/>
-                    <p>MOLINO PAGANI MOD-2235 DE 15HP</p>
-                </figure>
-                <figure className="products"
-                onClick={()=>Image(img17)}
-                >
-                    <img src={img17}/>
-                    <p>MOLINO CHINO DE 20 HP</p>
-                </figure>
+
+                {
+                    nombres.map(item =>{ 
+                        return(
+                            <figure className="products"
+                            onClick={item.funcion}
+                            >
+                                {item.img}
+                                {item.texto}
+                            </figure>
+                        )
+                    })
+                }
             </section>
         </div>
     )

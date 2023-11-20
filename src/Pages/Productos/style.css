@@ -5,7 +5,31 @@
     color: white;
 }
 
+.busqueda {
+    position: fixed;
+    z-index: 3;
+    right: 10%;
+    top: 60px;
+    background: linear-gradient(45deg,rgba(0, 0, 255, 0.788) 20%, rgba(255, 99, 71, 0.603) 100%);
+    width: 50vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.lupa{
+    color: white;
+    margin-left: 5px;
+}
+.input {
+    border: transparent;
+    width: 90%;
+}
+
 .title {
+    margin-top: 80px;
     z-index: 3;
 }
 
@@ -15,6 +39,12 @@ h1 {
     margin-bottom: 20px;
     margin-top: 20px;
     z-index: 3;
+}
+
+.input {
+    z-index: 3;
+    border-radius: 7px;
+    margin-bottom:10px;
 }
 
 figure {
@@ -148,7 +178,7 @@ section {
             border-bottom-left-radius: 17px;
             border-bottom-right-radius: 17px;
             border-top-left-radius: 17px;
-            color: black;
+            color: white;
         }
 
         section {
@@ -192,6 +222,14 @@ section {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
            
+        }
+        .busqueda {
+            right: auto;
+            width: 80%;
+            height: 50px;
+        }
+        .input {
+            width: 80%;
         }
     }
 }
