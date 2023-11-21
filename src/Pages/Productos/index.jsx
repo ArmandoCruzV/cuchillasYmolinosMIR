@@ -189,19 +189,20 @@ function Productos(){
         
 
             <section>
-
-                {
-                    nombres.map(item =>{ 
-                        return(
-                            <figure className="products"
-                            onClick={item.funcion}
-                            >
-                                {item.img}
-                                {item.texto}
-                            </figure>
-                        )
-                    })
-                }
+                
+            {
+             nombres.length ?
+            nombres.map(item =>(
+                <figure className="products"
+                onClick={item.funcion}
+                >
+                    {item.img}
+                    {item.texto}
+                </figure>
+                
+            )) : <p className="respuesta">No se encontraron resultados para {item}</p> 
+            }
+                
             </section>
         </div>
     )

@@ -5,6 +5,12 @@
     color: white;
 }
 
+.respuesta {
+    height: 70vh;
+    padding: 20px;
+    color: rgb(183, 183, 250);
+}
+
 .busqueda {
     position: fixed;
     z-index: 3;
