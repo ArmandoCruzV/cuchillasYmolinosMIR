@@ -6,31 +6,22 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    place-content: center;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: 10% 90%;
+    grid-template-columns: auto-fill 1fr;
 }
-
-.image {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    border-radius: 9px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.61);
-}
-
-#figure-image {
+#figure-img {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    border: transparent;
     width: 100vw;
     height: 100%;
-    display: grid;
-    grid-template-rows: 100%;
-    place-content: center;
-    justify-content: center;
+}
+#figure-img > img {
+    justify-self: center;
     align-items: center;
-    border: none;
-    padding: 20px;
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
 }
 
 .image-fondo {
@@ -45,8 +36,8 @@
 .icon-container {
     width: 100vw;
     display: grid;
-    place-content: end;
-    padding-right: 30px;
+    justify-content: end;
+    padding: 20px;
 }
 
 .icon-close {
@@ -57,4 +48,30 @@
     border-radius: 10px;
     padding: 5px;
     cursor: pointer;
+}
+
+.btnRegresar {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.527);
+    color: orangered;
+    z-index: 5;
+}
+
+.btnDelante {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.527);
+    color: orangered;
+    z-index: 5;
 }
