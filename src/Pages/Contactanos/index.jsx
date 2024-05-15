@@ -10,7 +10,7 @@ function Contactanos(){
             <div className="contactanos-h1"><h1>Contacta con nosotros</h1></div>
 
             <div className="contactanos-container">
-            <form  action="https://formsubmit.co/hao_2-d@hotmail.com" method="POST">
+            <form  action="" method="POST">
                 <label form="Nombre">Nombre</label>
                 <input type="text" name="name" required></input>
 
@@ -29,7 +29,7 @@ function Contactanos(){
                 </label>
                 <textarea type="text" name="subject"></textarea>
 
-                <input className="btn-send" type="submit" value="Enviar"></input>
+                <input className="btn-send" type="" value="Enviar"></input>
             </form>
 
             <div className="visitanos">
